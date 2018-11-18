@@ -1,5 +1,6 @@
+var navig = {
 <template>
-   <div class="navArea">
+    <div class="navArea">
                 <!-- Start Mobile Nav -->
                 <input type="checkbox" class="nav_box" id="nav-toggle">
                 <label for="nav-toggle" class="nav_but">
@@ -28,9 +29,12 @@
 </template>
 
 <script>
-  /* Your JS goes here */
+  export default {
+    }
 </script>
 
 <style>
   /* Your CSS goes here */
 </style>
+
+}

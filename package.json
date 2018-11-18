@@ -21,7 +21,10 @@
     "url": "https://github.com/EmmaBlue/Blue_E_Portfolio/issues"
   },
   "homepage": "https://github.com/EmmaBlue/Blue_E_Portfolio#readme",
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
@@ -35,6 +38,9 @@
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",

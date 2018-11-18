@@ -1,14 +1,13 @@
-import './app.scss'
+import './sass/style.scss'
+import Vue from 'vue'
+import App from './vue/App.vue'
  if (module.hot) {
        module.hot.accept()
      }
 
-const button = document.createElement("button")
-button.textContent = 'Open chat'
-document.body.appendChild(button)
+var app = new Vue({
+    el: '#app',
+    render: h => h(App),
 
-button.onclick = () => {
-  import(/* webpackChunkName: "chat" */ "./chat").then(chat => {
-    chat.init()
-  })
-}
+ })
+

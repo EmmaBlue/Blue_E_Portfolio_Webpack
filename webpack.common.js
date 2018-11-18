@@ -1,6 +1,7 @@
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
      entry: {
@@ -22,10 +23,22 @@ module.exports = {
      ]
    },
 
+   module: {
+    rules: [
+      {
+        test: /\.vue$/,
+        use: 'vue-loader'
+      }
+    ]
+  },
+
    plugins: [
-         new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['dist']),
          new HtmlWebpackPlugin({
-           title: 'My killer app'
-         })
+           title: 'Emma Jae Blue',
+           template: './src/index.html'
+         }),
+         new VueLoaderPlugin()
        ]
+
   }
