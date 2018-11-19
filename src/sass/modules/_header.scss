@@ -3,6 +3,7 @@
 #logo-sect {
 
   margin: 0 auto;
+  max-width: 200px;
 }
 
 #big-blue {
@@ -14,7 +15,6 @@
 
   font-family: $accent-font;
   font-size: 1.85em;
-  padding: 1% 25% 0% 25%;
   text-align: center;
   
 
@@ -49,9 +49,6 @@
     right: 5rem;
     background-color: transparent;
     z-index: 1000;
-    transition: -webkit-transform 0.8s cubic-bezier(0.69, 0, 0.007, 1);
-    transition: transform 0.8s cubic-bezier(0.69, 0, 0.007, 1);
-    transition: transform 0.8s cubic-bezier(0.69, 0, 0.007, 1), -webkit-transform 0.8s cubic-bezier(0.69, 0, 0.007, 1);
     opacity: 1;
 
   
@@ -62,10 +59,9 @@
 .nav_full {
     width: 0;
     position: fixed;
-    top: 25rem;
+    top: 22rem;
     right: 0;
     z-index: 1500;
-    transition: all 0.8s cubic-bezier(0.69, -0.55, 0.265, 1.55);
     opacity: 0;
 
     }
@@ -182,17 +178,17 @@
   
   /* HEADER Social Icons  */
 
-#socnav {
+.socNav {
     margin-top: 6rem;
   }
   
-  #socNav li {
+  .socNav li {
     display: inline;
     margin-right: 20px;
     font-size: 2rem;
   }
   
-  #socNav li a {
+  .socNav li a {
     color: $accent-color;
     list-style: none;
     text-decoration: none;
@@ -212,6 +208,17 @@
   /*Desktop Nav Queries*/
 
   @media screen and (min-width: 1024px ) {
+
+    #main-header {
+
+      display: flex;
+      justify-content: center;
+    }
+
+    #logo-sect {
+
+      margin: 0;
+    }
 
     .nav_but {
        display: none;
@@ -236,7 +243,8 @@
         z-index: 1500;
         transition: all 0.8s cubic-bezier(0.69, -0.55, 0.265, 1.55);
         opacity: 1;
-        top: 0rem;
+        top: 1rem;
+        right: 4em;
         display: inline;
     
     }
@@ -253,7 +261,6 @@
 
     .nav_item {
 
-        margin: 0rem;
         display: inline;
         
       }
@@ -269,9 +276,27 @@
         padding: 0rem 1.5rem;
     }
 
-    #socNav {
+    .socNav {
 
         display: inline;
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) and(max-width: 1124px) {
+
+    .nav_item {
+
+      margin: -1rem;
+    }
+  }
+
+
+  @media screen and (min-width: 1125px) {
+
+    .nav_item {
+
+      margin: 0rem;
     }
 
   }

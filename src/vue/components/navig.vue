@@ -11,18 +11,20 @@ var navig = {
                     <nav class="nav_full">
                         <h3 class="hidden">Main Navigation</h3>
                         <ul class="nav_list">
-                            <li class="nav_item"><a href="#frontSect" class="nav_link"><img class="logo" src="images/logo.svg" alt="Blue Fyre Logo" width="50" height="30">Home</a></li>
-                            <li class="nav_item"><a href="#serviceSect" class="nav_link">Services</a></li>
-                            <li class="nav_item"><a href="#portfolioSect" class="nav_link">Our Work</a></li>
-                            <li class="nav_item"><a href="#aboutSect" class="nav_link">About</a></li>
-                            <li class="nav_item"><a href="#ContactSect" class="nav_link">Contact</a></li>
+                             <li v-for="item in navItems" class="nav_item">
+                                <a :href="item.link" class="nav_link">{{item.text}}</a>
+                            </li>
                             <li class="nav_item">
-                                <ul id="socNav">
-                                    <li><a href="http://www.twitter.com" target="_blank" id="twitter"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="http://www.instagram.com" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="http://www.facebook.com" target="_blank" id="facebook"><i class="fab fa-facebook-square"></i></a></li>
+                                <ul class="socNav">
+                                    <li v-for="item in socItems">
+                                        <a :href="item.link" target="_blank" :id="item.id">
+                                            <i :class="item.class"></i>
+                                        </a>
+                                    </li>
+
                                 </ul>
                             </li>
+
                         </ul>
                     </nav>
             </div>
@@ -30,6 +32,32 @@ var navig = {
 
 <script>
   export default {
+      data() {
+
+          return {
+
+              navItems: [
+
+                {link:'#frontSect', text: 'Home'},
+                {link:'#projectSect', text: 'Projects'},
+                {link:'#aboutSect', text: 'About'},
+                {link:'#commSect', text: 'Community Work'},
+                {link:'#contactSect', text: 'Contact'}
+
+              ],
+
+               socItems: [
+
+                {link:'http://www.twitter.com', id: 'twitter', class: 'fab fa-twitter'},
+                {link:'http://www.facebook.com', id: 'facebook', class: 'fab fa-facebook-square'},
+                {link:'http://www.instagram.com', id: 'instagram', class: 'fab fa-instagram'},
+                {link:'https://github.com/EmmaBlue?tab=repositories', id: 'github', class: 'fab fa-github'}
+
+              ]
+
+
+          }
+      }
     }
 </script>
 

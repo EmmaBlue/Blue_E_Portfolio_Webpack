@@ -1,0 +1,49 @@
+#project-sect {
+
+    background-color: $second-bckgrnd;
+
+    #but-sect {
+
+        padding: 1em 0em 1em 0em;
+        text-align: center;
+    }
+}
+
+#project-grid {
+
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));
+    justify-content: stretch;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+
+    #project-grid {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: stretch;
+        object-fit: cover;
+    }
+
+}
+
+.work-box {
+
+    background-color: $text-color;
+    border: 1px white solid;
+    min-height: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    #project-sect {
+    
+        #but-sect {
+    
+            padding: 1.5em 0em 1.5em 0em;
+        }
+    }
+    
+}
