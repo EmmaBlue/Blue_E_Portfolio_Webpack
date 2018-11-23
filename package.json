@@ -2,9 +2,10 @@
   "name": "blue_e_portfolio",
   "version": "1.0.0",
   "description": "Emma Blue's portfolio",
-  "main": "gulpfile.js",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -21,13 +22,30 @@
   },
   "homepage": "https://github.com/EmmaBlue/Blue_E_Portfolio#readme",
   "dependencies": {
-    "eslint": "^5.7.0",
-    "sass": "^1.14.3"
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^4.0.2"
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash-es": "^4.17.11",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   }
 }
