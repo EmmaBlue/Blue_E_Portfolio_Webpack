@@ -6,6 +6,8 @@
 @import 'modules/_community';
 @import 'modules/_contact';
 @import 'modules/_footer';
+@import 'modules/_projects_page';
+@import 'modules/_community_page';
 
 body {
 
@@ -14,6 +16,17 @@ body {
     font-size: $mfont-size;
     color: $text-color;
     margin: 0px;
+}
+
+h2 {
+
+    text-align: center;
+    font-weight: normal;
+}
+
+.flex {
+
+    display: flex;
 }
 
 button {

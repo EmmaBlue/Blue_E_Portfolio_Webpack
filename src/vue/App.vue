@@ -27,6 +27,7 @@
   import mainfooter from "./components/mainfooter.vue";
 
   export default {
+
       components: {
           "navig": navig,
           "front": front,

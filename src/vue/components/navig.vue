@@ -38,10 +38,10 @@ var navig = {
 
               navItems: [
 
-                {link:'#frontSect', text: 'Home'},
-                {link:'#projectSect', text: 'Projects'},
+                {link:'index.html', text: 'Home'},
+                {link:'projects.html', text: 'Projects'},
                 {link:'#aboutSect', text: 'About'},
-                {link:'#commSect', text: 'Community Work'},
+                {link:'community.html', text: 'Community Work'},
                 {link:'#contactSect', text: 'Contact'}
 
               ],

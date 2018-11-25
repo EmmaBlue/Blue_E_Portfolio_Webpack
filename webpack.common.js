@@ -23,7 +23,6 @@ module.exports = {
      ]
    },
 
-
    module: {
     rules: [
       {
@@ -50,6 +49,21 @@ module.exports = {
            title: 'Emma Jae Blue',
            template: './src/index.html'
          }),
+
+         new HtmlWebpackPlugin({
+          title: 'Projects',
+          template: './src/projects.html'
+        }),
+
+        new HtmlWebpackPlugin({
+          title: 'Community',
+          template: './src/community.html'
+        }),
+
+        new HtmlWebpackPlugin({
+          title: 'Contact',
+          template: './src/contact.html'
+        }),
          new VueLoaderPlugin()
        ]
 

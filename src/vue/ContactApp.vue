@@ -7,7 +7,7 @@
         <navig></navig>
       </header>
       <main>
-        <projects></projects>
+        <contactp></contactp>
       </main>
      <mainfooter></mainfooter>
   </body>
@@ -15,13 +15,13 @@
 
 <script>
 import navig from "./components/navig.vue";
-import projects from "./components/projects.vue";
+import contactp from "./components/contactp.vue";
 import mainfooter from "./components/mainfooter.vue";
 
   export default {
      components: {
           "navig": navig,
-          "projects": projects,
+          "contactp": contactp, 
           "mainfooter": mainfooter
       }
   
