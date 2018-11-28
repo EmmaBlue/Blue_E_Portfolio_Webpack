@@ -1,16 +1,9 @@
 <template>
   <body>
-     <header id="main-header">
-        <section id="logo-sect">
-          <h2 id="logo">Emma Jae <span id="big-blue">Blue</span></h2>
-        </section>
-        <navig></navig>
-      </header>
       <main>
         <h2>Community Work</h2>
         <communityp></communityp>
       </main>
-     <mainfooter></mainfooter>
   </body>
 </template>
 

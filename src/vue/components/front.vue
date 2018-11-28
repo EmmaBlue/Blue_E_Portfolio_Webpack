@@ -9,7 +9,7 @@ var front = {
                 <button>See My Work</button>
             </div>
             <div>
-                <img id="emma-front" alt="Emma Blue">
+                <img v-lazy="mainImg" id="emma-front" alt="Emma Blue">
             </div>
         </div>
     </section>
@@ -20,8 +20,8 @@ var front = {
       data() {
 
           return {
-
-
+           
+              mainImg: '../images/emma-mobile.png'
           }
       }
     }

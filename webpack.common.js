@@ -29,19 +29,8 @@ module.exports = {
         test: /\.vue$/,
         use: 'vue-loader'
       }, 
-
-       {
-            test: /\.(png|jp(e*)g|svg)$/,  
-            use: [{
-                loader: 'url-loader',
-                options: { 
-                    limit: 8000, // Convert images < 8kb to base64 strings
-                    name: 'images/[hash]-[name].[ext]'
-                } 
-            }]
-        }
     ]
-  }, 
+  },
 
    plugins: [
         new CleanWebpackPlugin(['dist']),
@@ -49,21 +38,6 @@ module.exports = {
            title: 'Emma Jae Blue',
            template: './src/index.html'
          }),
-
-         new HtmlWebpackPlugin({
-          title: 'Projects',
-          template: './src/projects.html'
-        }),
-
-        new HtmlWebpackPlugin({
-          title: 'Community',
-          template: './src/community.html'
-        }),
-
-        new HtmlWebpackPlugin({
-          title: 'Contact',
-          template: './src/contact.html'
-        }),
          new VueLoaderPlugin()
        ]
 
