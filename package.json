@@ -23,11 +23,13 @@
   "homepage": "https://github.com/EmmaBlue/Blue_E_Portfolio#readme",
   "dependencies": {
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue-clazy-load": "^0.4.2",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "@vue/cli-service": "^3.1.4",
     "babel-loader": "^8.0.4",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "clean-webpack-plugin": "^1.0.0",
@@ -39,7 +41,7 @@
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
+    "vue-lazyload": "^1.2.6",
     "vue-loader": "^15.4.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.5.17",

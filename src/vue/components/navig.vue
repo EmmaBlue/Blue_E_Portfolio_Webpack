@@ -11,8 +11,12 @@ var navig = {
                     <nav class="nav_full">
                         <h3 class="hidden">Main Navigation</h3>
                         <ul class="nav_list">
-                             <li v-for="item in navItems" class="nav_item">
-                                <a :href="item.link" class="nav_link">{{item.text}}</a>
+                             <li class="nav_item">
+                                <router-link to="/" class="nav_link">Home</router-link>
+                                <router-link to="/projects" class="nav_link">Projects</router-link>
+                                <router-link to="/about" class="nav_link">About</router-link>
+                                <router-link to="/community" class="nav_link">Community Work</router-link>
+                                <router-link to="/contact" class="nav_link">Contact</router-link>
                             </li>
                             <li class="nav_item">
                                 <ul class="socNav">
@@ -35,16 +39,6 @@ var navig = {
       data() {
 
           return {
-
-              navItems: [
-
-                {link:'#frontSect', text: 'Home'},
-                {link:'#projectSect', text: 'Projects'},
-                {link:'#aboutSect', text: 'About'},
-                {link:'#commSect', text: 'Community Work'},
-                {link:'#contactSect', text: 'Contact'}
-
-              ],
 
                socItems: [
 

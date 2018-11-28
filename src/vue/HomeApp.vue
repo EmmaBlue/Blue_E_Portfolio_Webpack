@@ -1,15 +1,13 @@
 <template>
   <body>
-      <header id="main-header">
-        <section id="logo-sect">
-          <h2 id="logo">Emma Jae <span id="big-blue">Blue</span></h2>
-        </section>
-        <navig></navig>
-      </header>
     <main>
-      <router-view></router-view>
+      <front></front>
+      <work></work>
+      <about></about>
+      <community></community>
+      <contact></contact>
+
     </main>
-    <mainfooter></mainfooter>
   </body>
 </template>
 

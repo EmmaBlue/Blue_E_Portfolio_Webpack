@@ -1,20 +1,21 @@
 <template>
   <body>
       <main>
-        <projects></projects>
+        <h2>Community Work</h2>
+        <communityp></communityp>
       </main>
   </body>
 </template>
 
 <script>
 import navig from "./components/navig.vue";
-import projects from "./components/projects.vue";
+import communityp from "./components/communityp.vue";
 import mainfooter from "./components/mainfooter.vue";
 
   export default {
      components: {
           "navig": navig,
-          "projects": projects,
+          "communityp": communityp,
           "mainfooter": mainfooter
       }
   
